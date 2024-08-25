@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="background-container">
 
-          <div class="openbtn"><span></span><span>Menu</span><span></span></div>
-          <!-- ハンバーガー -->
-
-
-          <ul class="menu">
-                <li><a href="">TOP</a></li>
-                <li><a href="">部屋紹介</a></li>
-                <li><a href="">アクセス</a></li>
-                <li><a href="">お問合せ</a></li>
+          <ul id="menu" class="menu">
+                <li><a href="#menu">TOP</a></li>
+                <li><a href="#section1">部屋紹介</a></li>
+                <li><a href="#section2">アクセス</a></li>
+                <li><a href="#footer">お問合せ</a></li>
             </ul>
 
           <h1 class="title">Music Laboratory Link</h1>
@@ -28,7 +27,7 @@
 
     </header>
     <main class="main">
-      <div class="section1">
+      <div id="section1" class="section1">
 
         <div class="room-img">
           <img class="room1" src="./assets/img/1724199648336.jpg" alt="">
@@ -47,21 +46,32 @@
         </div>
       </div>
 
-      <div class="section2">
-          <!-- 左側の要素 (アクセス情報) -->
-          <div>
+      <div id="section2" class="section2">
+
+        <div class="left">
+
+           <div class="text-content2">
+            <!-- 左側の要素 (アクセス情報) -->
               <h2>アクセス</h2>
               <p>鹿児島市谷山港1-3-48</p>
-          </div>
+           </div>
+
           <!-- 右側の要素 (地図と画像) -->
-          <div style="display: flex; gap: 20px;">
+           <div class="iframe" style="display: flex; gap: 20px;">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.61095740275!2d130.52275707504356!3d31.50105137422281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e651b3b8d0829%3A0x7d014bc39370a1ac!2smusic%20laboratory%20Link!5e1!3m2!1sja!2sph!4v1724435916152!5m2!1sja!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-              <img class="outside-img" src="./assets/img/1724199652542.jpg" alt="Link Image" style="border-radius: 20px; width: 400px; height: 300px;">
-          </div>
+           </div>
+
         </div>
 
+        <div>
+              <img class="outside-img" src="./assets/img/1724199652542.jpg" alt="Link Image" style="border-radius: 20px; width: 400px; height: 300px;">
+        </div>
+
+
+       </div>
+
     </main>
-    <footer>
+    <footer id="footer">
 
       <div class="background-container2">
 
@@ -70,7 +80,7 @@
            <li class="SNS">SNS</li>
 
            <a href="https://www.instagram.com/musiclaboratory.link?igsh=NDQ5ZXprampkemh0" target="_blank" style="text-decoration:none;">
-            <i class="fab fa-instagram" style="font-size: 80px; color: #E1306C; background-color: white;"></i>
+            <i id="i" class="fab fa-instagram" style="font-size: 80px; color: #E1306C; background-color: white;"></i>
            </a>
           </div>
 
