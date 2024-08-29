@@ -31,7 +31,7 @@ html {
     /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 影をつける（任意） */ */
   /* } */
 
-.nav { 
+.nav /*justify-content-end*/ { 
     /* position: fixed; 画面上部に固定 */
     list-style: none;
     display: flex;
@@ -138,7 +138,6 @@ html {
     align-items: center;
     margin-top: 40px;
 }
-
 .left {
     display: flex;
     flex-direction: column;
@@ -242,4 +241,122 @@ html {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* モバイル対応のスタイル */
+@media (max-width: 768px) {
+    .nav justify-content-end {
+        width: 90%; /* ナビゲーションバーの幅を広げる */
+        padding-left: 5%; /* 左側のパディングを減らす */
+        justify-content: space-between; /* アイテム間のスペースを調整 */
+        /* flex-direction: column; ナビゲーションアイテムを縦方向に並べる */
+        /* text-align: center; */
+    }
+
+    .nav >li >a {
+        font-size: 10px; /* フォントサイズを少し小さくする */
+        padding: 10px; /* パディングを増やしてクリックしやすくする */
+    }
+
+    .background-container {
+        height: 500px; /* 背景画像エリアの高さを縮小 */
+    }
+
+    .title {
+        font-size: 50px; /* タイトルのフォントサイズを小さくする */
+        line-height: 1.2;
+    }
+
+    .section1 {
+        flex-direction: column; /* セクションを縦方向に並べる */
+        height: auto; /* セクションの高さを自動に設定 *//
+    }
+
+    .room-img {
+        width: 90%; /* 画像の幅を広げる */
+        margin: 0 auto; /* 中央揃え */
+    }
+
+    .room1,
+    .room2 {
+        width: 100%; /* 画像を100%の幅で表示 */
+        margin: 20px 0; /* 画像間にスペースを追加 */
+        border-radius: 15%; /* 角を少し丸くする */
+    }
+
+    .text-content1 {
+        height: auto; /* コンテナの高さを自動に設定 */
+        line-height: 1.5; /* 行間を縮小 */
+    }
+
+    .section2 {
+        flex-direction: column; /* セクションを縦方向に並べる */
+        height: auto; /* セクションの高さを自動に設定 */
+    }
+
+    .text-content2 {
+        width: 100%; /* コンテナの幅を100%に */
+        font-size: medium; /* フォントサイズを少し小さくする */
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    .iframe {
+        width: 100%; /* iframeの幅を100%に */
+        margin: 20px 0; /* 上下にスペースを追加 */
+    }
+
+    .outside-img {
+        width: 90%; /* 画像の幅を広げる */
+        height: auto; /* 高さを自動に設定 */
+        margin: 20px auto; /* 画像を中央揃え */
+    }
+
+    .background-container2 {
+            /* display: none; */
+        height: 500px; /* 背景画像エリアの高さを縮小 */
+    }
+
+    .footer-text {
+        flex-direction: column; /* フッターを縦方向に並べる */
+        height: auto; /* コンテナの高さを自動に設定 */
+        margin-top: 30%;
+    }
+
+    .SNS-content {
+        line-height: 2; /* 行間を縮小 */
+    }
+
+    .SNS {
+        font-size: 30px; /* フォントサイズを小さくする */
+    }
+
+    #i {
+        padding: 10px; /* パディングを減らす */
+        border-radius: 5%; /* 角を少し丸くする */
+    }
+
+    .p1 {
+        font-size: 20px; /* フォントサイズを小さくする */
+        margin-left: 0; /* 左マージンを削除 */
+        text-align: center; /* テキストを中央揃え */
+    }
+
+    .carousel {
+        top: o; /* カルーセルの位置を下げる */
+        left: 50%; /* カルーセルを中央に配置 */
+        transform: translate(-50%, -50%); /* 中央揃え */
+        width: 100%; /* カルーセルの幅を広げる */
+        height:auto;
+        display: none;
+    }
+
+    .btn {
+        bottom: 10px; /* ボタンの位置を下げる */
+        right: 10px; /* ボタンの右マージンを減らす */
+        padding: 8px 16px; /* パディングを小さくする */
+        font-size: 10px; /* フォントサイズを小さくする */
+    }
 }
