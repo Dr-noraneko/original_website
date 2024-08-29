@@ -111,13 +111,37 @@ html {
     margin-bottom: 50px;
     margin-right: 200px;
     border-radius: 30%;
+
+    /* 初期状態では画像を画面の外に隠す */
+    position: relative;
+    left: -100%; /* 画像を左に隠す */
+    opacity: 0;
+    transition: left 2s ease-in-out, opacity 2s ease-in-out; /* アニメーション効果 */
+}
+
+/* スクロールで画像を表示するためのクラス */
+.room1.show {
+    left: 0; /* 元の位置に戻す */
+    opacity: 1; /* 透明度を1にする */
 }
 
 .room2 {
     width: 70%;
     margin-left:200px;
     border-radius: 30%;
-}
+
+        /* 初期状態では画像を画面の外に隠す */
+        position: relative;
+        left: -100%; /* 画像を左に隠す */
+        opacity: 0;
+        transition: left 2s ease-in-out, opacity 2s ease-in-out; /* アニメーション効果 */
+    }
+    
+    /* スクロールで画像を表示するためのクラス */
+    .room2.show {
+        left: 0; /* 元の位置に戻す */
+        opacity: 1; /* 透明度を1にする */
+    }
 
 .text-content1 {
     display: flex;                /* フレックスボックスを使用 */
@@ -169,6 +193,18 @@ html {
     float: right; /* 画像を右に浮かせる */
   justify-content: center;
   align-items: center;
+
+  /* 初期状態では画像を画面の外に隠す */
+  position: relative;
+  right: -100%;
+  opacity: 0;
+  transition: right 2s ease-in-out, opacity 2s ease-in-out; /* アニメーション効果 */
+}
+
+/* スクロールで画像を表示するためのクラス */
+.outside-img.show {
+  right: 0; /* 元の位置に戻す */
+  opacity: 1; /* 透明度を1にする */
 }
 
 /* footer */
@@ -234,13 +270,14 @@ html {
     height: 20%;
 }
 
-.btn {
+#scrollToTopBtn {
     position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: aliceblue;
 }
 
 /* モバイル対応のスタイル */
