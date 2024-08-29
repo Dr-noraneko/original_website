@@ -18,26 +18,36 @@
     /* position: absolute;
   } */
 
-  html {
+html {
     scroll-behavior: smooth;
 }
 
-.menu {
-    /* position: fixed; 画面に固定 */
+/* .menu-nav {
+    /* position: fixed; 画面上部に固定 */
+    /* top: 0; 上端に配置 */
+    /* width: 100%; 画面幅全体に広げる */
+    /* background-color: #fff; 背景色を指定（任意） */
+    /* z-index: 1000; 他の要素よりも前面に表示 */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 影をつける（任意） */ */
+  /* } */
+
+.nav { 
+    /* position: fixed; 画面上部に固定 */
     list-style: none;
     display: flex;
     flex-direction: row;
-    border-radius: 5px; /* 角を丸くする */
-    position: absolute; /* 背景画像上に絶対位置で配置 */
-    z-index: 10; /* 他の要素より前面に表示されるように設定 */
+    border-radius: 10px; /* 角を丸くする */
+    position: fixed; /*背景画像上に絶対位置で配置*/
+    /* z-index: 10; 他の要素より前面に表示されるように設定 */
     width: 40%;
     height: auto;
     margin: 30px 0;
-    padding-left: 55%;
+    padding-left: 45%;
     justify-content: space-around; /* アイテム間に均等なスペースを配置 */
+    /* z-index: 1010; 他の要素よりもさらに前面に表示されるように設定 */
 }
 
-.menu >li >a{
+.nav >li >a{
     text-decoration: none;
     font-size: 25px;
     display: block;
@@ -46,8 +56,9 @@
     background-color: rgba(0, 0, 0, 0.5); /* 背景に半透明の黒を設定 */
     padding: 5px;
     border-radius: 5%;
+    font-weight: bold;
 }
-.menu li a:hover {
+.nav li a:hover {
     background-color: rgba(0, 0, 0, 0.8); /* ホバー時に背景を濃くする */
   }
 
@@ -148,9 +159,8 @@
 
 .iframe {
     width: 30%;   /* 幅を設定 */
-    height: 50%; /* 高さを設定 */
     border: 0;     /* 枠線を削除 */
-    margin-top: 20%;
+    margin-top: 5%;
   }
 
 .outside-img {
@@ -198,6 +208,7 @@
 
 .SNS {
     font-size: 50px;
+    font-weight: bold;
 }
 
 #i {
@@ -207,4 +218,28 @@
 
 .p1 {
     font-size: 30px;
+    margin-bottom: 20%;
+    margin-left: 16%;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+.carousel {
+    position: absolute;
+    top: 43%;
+    left: 62%;
+    /* transform: translate(-50%, -50%); */
+    width: 20%; /* 必要に応じて幅を調整 */
+    z-index: 1; /* 背景画像の前面に配置 */
+    height: 20%;
+}
+
+.btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }

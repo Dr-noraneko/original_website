@@ -1,94 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Laboratory Link</title>
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Laboratory Link</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <div class="background-container">
-
-          <ul id="menu" class="menu">
-                <li><a href="#menu">TOP</a></li>
-                <li><a href="#section1">部屋紹介</a></li>
-                <li><a href="#section2">アクセス</a></li>
-                <li><a href="#footer">お問合せ</a></li>
-            </ul>
-
-          <h1 class="title">Music Laboratory Link</h1>
+  <header>
+    <div class="background-container">
+      <!-- <div class="menu-nav"> -->
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">TOP</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section1">お部屋紹介</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#section2">アクセス</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">お問い合わせ</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">お問い合わせ</a>
+          </li> -->
+        </ul>
+        <!-- <ul id="menu" class="menu">
+          <li><a href="">TOP</a></li>
+          <li><a href="#section1">部屋紹介</a></li>
+          <li><a href="#section2">アクセス</a></li>
+          <li><a href="#footer">お問合せ</a></li>
+        </ul> -->
+      <!-- </div> -->
+      <h1 class="title">Music Laboratory Link</h1>
+    </div>
+  </header>
+  <main class="main">
+    <div id="section1" class="section1">
+      <div class="room-img">
+        <img class="room1" src="./assets/img/1724199648336.jpg" alt="">
+        <img class="room2" src="./assets/img/1724199649173.jpg" alt="">
+      </div>
+      <div class="text-content1">
+        <p>鹿児島谷山港に位置するアットホームな音楽スタジオ
+          <br>2部屋完備
+          <br>2人以下 : ¥700/h
+          <br>3人以上 : ¥500/h
+          <br>完全予約制
+          <br>ご予約・お問合せはSNSにて
+        </p>
+      </div>
+    </div>
+    <div id="section2" class="section2">
+      <div class="left">
+        <div class="text-content2">
+        <!-- 左側の要素 (アクセス情報) -->
+          <h2>アクセス</h2>
+          <p>〒891-0131
+            <br>
+          <p>鹿児島市谷山港1-3-48</p>
         </div>
-
-    </header>
-    <main class="main">
-      <div id="section1" class="section1">
-
-        <div class="room-img">
-          <img class="room1" src="./assets/img/1724199648336.jpg" alt="">
-
-          <img class="room2" src="./assets/img/1724199649173.jpg" alt="">
-        </div>
-        
-        <div class="text-content1">
-         <p>鹿児島谷山港に位置するアットホームな音楽スタジオ
-           <br>2部屋完備
-           <br>2人以下 : ¥700/h
-           <br>3人以上 : ¥500/h
-           <br>完全予約制
-           <br>ご予約・お問合せはSNSにて
-         </p>
+        <!-- 右側の要素 (地図と画像) -->
+        <div class="iframe" style="display: flex; gap: 20px;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.61095740275!2d130.52275707504356!3d31.50105137422281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e651b3b8d0829%3A0x7d014bc39370a1ac!2smusic%20laboratory%20Link!5e1!3m2!1sja!2sph!4v1724435916152!5m2!1sja!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
-
-      <div id="section2" class="section2">
-
-        <div class="left">
-
-           <div class="text-content2">
-            <!-- 左側の要素 (アクセス情報) -->
-              <h2>アクセス</h2>
-              <p>鹿児島市谷山港1-3-48</p>
-           </div>
-
-          <!-- 右側の要素 (地図と画像) -->
-           <div class="iframe" style="display: flex; gap: 20px;">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2976.61095740275!2d130.52275707504356!3d31.50105137422281!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e651b3b8d0829%3A0x7d014bc39370a1ac!2smusic%20laboratory%20Link!5e1!3m2!1sja!2sph!4v1724435916152!5m2!1sja!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-           </div>
-
-        </div>
-
-        <div>
-              <img class="outside-img" src="./assets/img/1724199652542.jpg" alt="Link Image" style="border-radius: 20px; width: 400px; height: 300px;">
-        </div>
-
-
-       </div>
-
-    </main>
+      <div>
+        <img class="outside-img" src="./assets/img/1724199652542.jpg" alt="Link Image" style="border-radius: 20px; width: 400px; height: 300px;">
+      </div>
+    </div>
+  </main>
     <footer id="footer">
-
       <div class="background-container2">
-
         <ul class="footer-text">
           <div class="SNS-content">
-           <li class="SNS">SNS</li>
-
-           <a href="https://www.instagram.com/musiclaboratory.link?igsh=NDQ5ZXprampkemh0" target="_blank" style="text-decoration:none;">
+          <li class="SNS">SNS</li>
+          <a href="https://www.instagram.com/musiclaboratory.link?igsh=NDQ5ZXprampkemh0" target="_blank" style="text-decoration:none;">
             <i id="i" class="fab fa-instagram" style="font-size: 80px; color: #E1306C; background-color: white;"></i>
-           </a>
+          </a>
           </div>
-
           <li class="p1">お問合せはこちら</li>
         </ul>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/1724199653311.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/1724199650335.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/1724199647589.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- <a href="#menu" class="btn btn-light">TOPへ</a> -->
+        <!-- <button type="button" class="btn btn-light">
+          <a href="#menu">TOPへ</a>
+        </button> -->
+        <button type="button" class="btn btn-light">TOPへ</button>        
+
       </div>
     </footer>
 
+    <!-- 例 -->
+    <!-- <footer>
+      <div class="footer-left">
+        <img src="#" alt="SNSリンク">
+      </div>
+      <div class="footer-right">
+        <ul>
+          <li>お問合せ</li>
+          <li>予約</li>
+          <li>企業情報</li>
+        </ul>
+      </div>
+    </footer> -->
+    <script>
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth' // スムーズにスクロールするオプション
+        })
+      }
+    </script>
     <script src="./assets/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
